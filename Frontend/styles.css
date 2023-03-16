@@ -313,7 +313,7 @@ img {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 24px;
     padding-bottom: 50px;
     color: #F2CB05;
@@ -425,7 +425,11 @@ footer {
 
 #redes__container {
     margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
+
 
 .redes {
     text-decoration: none;
@@ -527,5 +531,86 @@ footer {
         width: 27px;
     }
 
+}
 
+@media(min-width: 700px){
+    .hero__title{
+        font-size: 45px;
+    }
+
+    .hero__paragraph{
+        font-size: 20px;
+    }
+
+    .cta{
+        font-size: 20px;
+    }
+
+    #footer__text{
+        font-size: 18px;
+    }
+
+    .redes__img{
+        width: 35px;
+    }
+}
+
+@media(min-width:900px){
+    .hero__title{
+        font-size: 69px;
+    }
+    .hero__paragraph{
+        font-size: 29px;
+    }
+    .cta{
+        width: 35%;
+        font-size: 34px;
+    }
+    .header__nav{
+        height: 94px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__logo{
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+    .header__img{
+        margin-top: 0px;
+        max-width: 126px;
+        height: 86px;
+        margin-left: 9px;
+    }
+
+    .header__links{
+        position:relative;
+        display: flex;
+        flex-direction: row;
+        top: 0;
+        transform: none;
+        height: auto;
+        padding: 0;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+
+    .header__link{
+        margin: 0;
+    }
+
+    .link{
+        font-weight: 800;
+        font-size: 20px;
+    }
+
+    .nav__toggle{
+        display: none !important;
+    }
+
+    .nosotros{
+        gap: 90px;
+    }
 }
