@@ -271,6 +271,14 @@ img {
     line-height: 49px;
 }
 
+.container__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    align-items: center;
+}
+
 
 
 .llegar__container {
@@ -480,10 +488,6 @@ footer {
         justify-content: center;
     }
 
-    .subtitle {
-        padding-bottom: 200px;
-    }
-
     .contacto {
         gap: 30px;
     }
@@ -510,4 +514,18 @@ footer {
         line-height: 29px;
         text-align: justify;
     }
+
+    #redes__container{
+        margin-right: 25px;
+    }
+
+    .redes{
+        padding: 10px;
+    }
+
+    .redes__img{
+        width: 27px;
+    }
+
+
 }
