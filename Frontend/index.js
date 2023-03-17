@@ -13,6 +13,20 @@ for (let i = 0; i < li.length; i++) {
 }
 
 
+// slider
+
+let contenedor = document.getElementById('contenedor_slider');
+let auto = 0;
+setInterval(() => {
+    auto++;
+    if (auto > 1) {
+            contenedor.insertBefore(contenedor.lastChild, contenedor.firstChild);
+    }
+
+}, 3000);
+
+
+
 
 const formElement = document.getElementById('suscripcion')
 
