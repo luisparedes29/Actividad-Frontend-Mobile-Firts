@@ -1,3 +1,7 @@
+import './styles.css'
+import './index.html';
+// import './imagenes';
+
 _toogle.onclick = () => {
     _items.classList.toggle("open")
 }
