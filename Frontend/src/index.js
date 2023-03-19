@@ -24,13 +24,13 @@ let auto = 0;
 setInterval(() => {
     auto++;
     if (auto > 1) {
-            contenedor.insertBefore(contenedor.lastChild, contenedor.firstChild);
+        contenedor.insertBefore(contenedor.lastChild, contenedor.firstChild);
     }
 
 }, 3000);
 
 
-
+const Swal = require('sweetalert2')
 
 const formElement = document.getElementById('suscripcion')
 
@@ -46,7 +46,16 @@ formElement.addEventListener('submit', (event) => {
     fetch("http://localhost:3000", {
         method: 'Post',
         body: datosJson
-    }).then(x => console.log("hola"))
+    }).then((x) => {
+        console.log(x)
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Tus datos han sido enviados',
+            showConfirmButton: false,
+            timer: 1200,
+        });
+    })
 
     formElement.reset();
 })

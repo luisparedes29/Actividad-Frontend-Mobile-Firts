@@ -17,7 +17,6 @@ img {
     position: fixed;
     z-index: 1000;
     top: 0;
-    /*max-width:1000px;*/
     left: 0;
     width: 100%;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
@@ -47,7 +46,6 @@ img {
     max-width: 104px;
     height: 67px;
     max-height: 100px;
-    /* margin-left: 58px; */
 }
 
 .header__links {
@@ -231,7 +229,6 @@ img {
 .item__flex {
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
     padding: 25px;
     flex-direction: column;
 }
@@ -257,7 +254,6 @@ img {
     object-fit: cover;
     width: 165px;
     border-radius: 5px;
-    /* height: 62px; */
     margin-bottom: 20px;
 }
 
@@ -307,7 +303,6 @@ img {
 
 .llegar__container {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -488,7 +483,6 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* padding: 50px; */
         margin-right: 20px;
     }
 
@@ -652,4 +646,86 @@ footer {
     .nosotros{
         gap: 90px;
     }
+}
+
+@media(min-width:1200px){
+    .header__links{
+        padding-right: 83px;
+        padding-left: 196px;
+    }
+
+    .link{
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .hero__texts{
+        top:38%;
+        left: 128px;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+    }
+
+    .hero__title{
+        font-size: 56px;
+    }
+
+    .hero__paragraph{
+        font-size: 27px;
+    }
+
+    .cta{
+        font-size: 29px;
+    }
+
+    .nosotros{
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .nosotros__container{
+        width: 100%;
+        padding: 50px;
+    }
+
+    .nosotros__referencias{
+        width: 150%;
+    }
+
+    .item__img{
+        width: 60%;
+    }
+
+    .item__paragraph{
+        font-size: 15px;
+    }
+
+    .img__referencia{
+        width: 75px;
+        height: 75px;
+    }
+
+    .referencias__paragraph{
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .subtitle{
+        font-weight: 600;
+    }
+
+    .llegar__container{
+        gap: 50px;
+    }
+
+    .llegar__item{
+        width: 300px;
+        height: 350px;
+    }
+
+    .contacto__1{
+        width: 40%;
+    }
+
+
 }

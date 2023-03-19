@@ -14,6 +14,7 @@ let conexion = bd
         // Neat!
     });
     console.log(query.sql);
+    res.status(200).json("Guardado perfecto")
 });
 
 
